@@ -1,28 +1,17 @@
-<<<<<<< HEAD
-# site-blog
-=======
-# README
+Resource
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Users - create users table and model - add validations * username must be present and unique, min 3 max 25 * email address must be present and unique, max 105 * email must be valid email format, check with email regex
+Associations
 
-Things you may want to cover:
+One-to-many between users and articles
+REST for users
 
-* Ruby version
+Authentication
 
-* System dependencies
+Login using secure password
+Restriction of actions
 
-* Configuration
+Based on logged in/logged out state
+Security
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
->>>>>>> 73f3e7a (Initial Rails app setup)
+Admin user functionality and access level
