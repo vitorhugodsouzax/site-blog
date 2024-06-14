@@ -8,6 +8,16 @@
   color: white !important;
 }
 
+.button-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.delete-button {
+  display: inline-block;
+}
+
 #logo {
   float: left;
   font-size: 1.7em;
