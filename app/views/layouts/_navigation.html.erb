@@ -6,25 +6,22 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-       <%= link_to "Artigos", articles_path, class: "nav-link" %>
-      </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Links</a>
+        <a class="nav-link" href="#">Link</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Menu
+          Artigos
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <%= link_to "Criar artigos", new_article_path, class: "dropdown-item" %>
-          <a class="dropdown-item" href="#">Another action</a>
+          <%= link_to "Criar um novo artigo", new_article_path, class: "dropdown-item" %>
+          <%= link_to "Ver artigos", articles_path, class: "dropdown-item" %>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="#">Algo</a>
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
