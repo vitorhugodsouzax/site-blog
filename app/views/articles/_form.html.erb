@@ -4,19 +4,19 @@
     <%= render 'shared/errors', obj: @article %>
       <%= form_with(model: @article, class: "shadow p-3 mb-3 bg-info rounded", local: true) do |f| %>
         <div class="form-group row">
-      <label class="col-2 col-form-label text-light" for="article_title">Titulo</label>
-          <div class="col-10">
+          <%= f.label :title, "Titulo", class: "col-2 col-form-label text-light" %>
+           <div class="col-10">
             <%= f.text_field :title, class: "form-control shadow rounded", placeholder: "Titulo do artigo" %>
           </div>
         </div>
         <div class="form-group row">
-   <label class="col-2 col-form-label text-light" for="article_description">Descrição</label>
+          <%= f.label :description, "Descrição", class: "col-2 col-form-label text-light" %>
           <div class="col-10"> 
             <%= f.text_area :description, rows: 10, class: "form-control shadow rounded", placeholder: "Descrição do artigo" %>
           </div>
         </div>
         <div class="form-group row justify-content-center">
-       <input type="submit" name="commit" value="Atualizar artigo" class="btn btn-outline-light btn-lg" data-disable-with="Atualizar artigo">
+          <%= f.submit "Salvar",class: "btn btn-outline-light btn-lg" %>
         </div>
       <% end %>
     </div>

@@ -4,32 +4,33 @@
       <%= render 'shared/errors', obj: @user %>
       <%= form_with(model: @user, class: "shadow p-3 mb-3 bg-info rounded", local: true) do |f| %>
         <div class="form-group row">
-         <label class="col-2 col-form-label text-light" for="user_username">Nome de usuario</label>         
-        <div class="col-10">
-            <%= f.text_field :username, class: "form-control shadow rounded", placeholder: "Coloque seu nome de usuario" %>
+      <%= f.label :username, "Nome de usuário", class: "col-2 col-form-label text-light" %>
+          <div class="col-10">
+            <%= f.text_field :username, class: "form-control shadow rounded", placeholder: "Coloque seu nome de usuário" %>
           </div>
         </div>
 
         <div class="form-group row">
-          <%= f.label :email, class: "col-2 col-form-label text-light" %>
+          <%= f.label  :email, class: "col-2 col-form-label text-light" %>
           <div class="col-10"> 
             <%= f.email_field :email, class: "form-control shadow rounded", placeholder: "Coloque seu endereço de email" %>
           </div>
         </div>
 
         <div class="form-group row">
-          <label class="col-2 col-form-label text-light" for="user_password">Senha</label>
+          <%= f.label :password, "Senha",class: "col-2 col-form-label text-light" %>
           <div class="col-10"> 
-            <%= f.password_field :password, class: "form-control shadow rounded", placeholder: "Escolha sua senha" %>
+            <%= f.password_field :password, class: "form-control shadow rounded", placeholder: "Escolha a sua senha" %>
           </div>
         </div>
 
         <div class="form-group row justify-content-center">
-<input type="submit" name="commit" value="Criar usuario" class="btn btn-outline-light btn-lg" data-disable-with="Create User">        </div>
+          <%= f.submit "Cadastrar-se", class: "btn btn-outline-light btn-lg" %>
+        </div>
       <% end %>
     </div>
     <div class="mb-3">
-      <%= link_to '[ Cancelar e retornar a lista de artigos ]', articles_path, class: "text-info" %>
+      <%= link_to '[ Cancelar e retornar a lista de artigos! ]', articles_path, class: "text-info" %>
     </div>
   </div>
 </div>
