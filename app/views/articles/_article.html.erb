@@ -10,7 +10,9 @@
 
           <div class="card-header font-italic">
 
-            by <%= article.user.username if article.user %>
+           <% if article.user %>
+              by <%= link_to article.user.username, user_path(article.user) %>
+            <% end %>
 
           </div>
 
