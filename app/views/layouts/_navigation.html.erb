@@ -29,6 +29,7 @@
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <%= link_to "Ver seu perfil", user_path(current_user), class: "dropdown-item" %>
             <%= link_to "Editar seu perfil", edit_user_path(current_user), class: "dropdown-item" %>
+            <%= button_to "Deletar seu Perfil", user_path(current_user), class: "dropdown-item text-danger", method: :delete, data: { confirm: "Are you sure?" } %>
           </div>
         </li>
         <li class="nav-item">
