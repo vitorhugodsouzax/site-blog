@@ -49,6 +49,20 @@
   background-size: cover;
   height: 425px;
 }
+.nav-link {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline;
+  padding: 0;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
 
 html,
 body {

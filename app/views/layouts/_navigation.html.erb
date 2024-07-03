@@ -24,8 +24,7 @@
           <%= link_to current_user.username, user_path(current_user), class: "nav-link" %>
         </li>
         <li class="nav-item">
-          <%= link_to 'Sair', logout_path, class: "nav-link", method: :delete %>
-        </li>
+<%= button_to 'Sair', logout_path, class: "nav-link", method: :delete %>       </li>
       <% else %>
         <li class="nav-item">
           <%= link_to 'Entrar', login_path, class: "nav-link" %>
