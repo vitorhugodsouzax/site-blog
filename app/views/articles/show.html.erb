@@ -9,8 +9,11 @@
                   </div>
         <div class="card-body">
           <div class="card-text text-left"><%= simple_format(@article.description) %></div>
-          <%= link_to "Edit", edit_article_path(@article), class: "btn btn-outline-info" %>
-          <%= link_to "Delete", article_path(@article), class: "btn btn-outline-danger", method: :delete, data: {confirm: "Are you sure?"} %>
+          
+          <% if logged_in? && @article.user == current_user %>
+          <%= link_to "Editar", edit_article_path(@article), class: "btn btn-outline-info" %>
+          <%= link_to "Deletar", article_path(@article), class: "btn btn-outline-danger", method: :delete, data: {confirm: "Are you sure?"} %>
+          <% end %>
         </div>
         <div class="card-footer text-muted">
           <small>Criado a <%= time_ago_in_words(@article.created_at, include_seconds: true, locale: 'pt-BR') %> atrás, editado a <%= time_ago_in_words(@article.updated_at, include_seconds: true, locale: 'pt-BR') %> atrás</small>
