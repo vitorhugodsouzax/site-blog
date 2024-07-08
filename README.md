@@ -35,5 +35,7 @@ list of all created articles
 ![image](https://github.com/vitorhugodsouzax/site-blog/assets/108147291/7a9d690e-eb39-4175-b910-f6caba1eeb8e)
 
 mobile responsive
+
+
 ![image](https://github.com/vitorhugodsouzax/site-blog/assets/108147291/238fedce-fada-4300-9548-56eee47ed0d0)
 
