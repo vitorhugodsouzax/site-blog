@@ -15,3 +15,7 @@ Based on logged in/logged out state
 Security
 
 Admin user functionality and access level
+
+
+![image](https://github.com/vitorhugodsouzax/site-blog/assets/108147291/9d3eef02-b4b8-4f44-bc5c-f98b32a6cd76)
+
