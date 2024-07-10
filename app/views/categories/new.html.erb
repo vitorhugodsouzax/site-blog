@@ -5,14 +5,14 @@
       <%= render 'shared/errors', obj: @category %>
       <%= form_with(model: @category, class: "shadow p-3 mb-3 bg-info rounded", local: true) do |f| %>
         <div class="form-group row">
-      <%= f.label :name, "Nome de usuário", class: "col-2 col-form-label text-light" %>
+      <%= f.label :name, "Nome da categoria", class: "col-2 col-form-label text-light" %>
           <div class="col-10">
-            <%= f.text_field :name, class: "form-control shadow rounded", placeholder: "Coloque seu nome de usuário" %>
+            <%= f.text_field :name, class: "form-control shadow rounded", placeholder: "Coloque o nome" %>
           </div>
         </div>
-    
-        <div class="form-group row justify-content-center">
-          <%= f.submit "Salvar", class: "btn btn-outline-light btn-lg" %>
+     
+        <div class="form-group row justify-content-center"> 
+          <%= f.submit "Criar categoria", class: "btn btn-outline-light btn-lg" %>
         </div>
       <% end %>
     </div>
